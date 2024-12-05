@@ -260,6 +260,7 @@ footer button:hover {
     color: white !important;
   }
   .nav-items.dis {
+    width: 101vw;
     left: 0;
   }
 }
