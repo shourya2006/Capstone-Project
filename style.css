@@ -216,7 +216,7 @@ footer button:hover {
   display: none;
 }
 
-.disableget{
+.disableget {
   opacity: 0;
   right: -1000;
 }
@@ -235,7 +235,10 @@ footer button:hover {
   cursor: pointer;
   border-radius: 8px 0 0 8px;
 }
-
+.getin a {
+  color: white;
+  text-decoration: none;
+}
 .getin p {
   text-orientation: mixed;
   font-family: "Bebas Neue", sans-serif;

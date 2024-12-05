@@ -20,7 +20,6 @@ const touch = document.getElementById("touch");
 
 touch.addEventListener("click", function () {
   getintouch.classList.toggle("disable");
-
   touch.classList.remove("getin");
   touch.classList.add("disableget");
 });
