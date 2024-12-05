@@ -215,6 +215,34 @@ footer button:hover {
 .disable {
   display: none;
 }
+
+.disableget{
+  opacity: 0;
+  right: -1000;
+}
+.getin {
+  transition: 0.4s all;
+  writing-mode: vertical-lr;
+  position: fixed;
+  height: 200px;
+  padding: 10px;
+  width: 40px;
+  background-color: #000000;
+  top: 40%;
+  right: 0;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px;
+}
+
+.getin p {
+  text-orientation: mixed;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+}
 /* Responsive */
 
 @media (max-width: 1239px) {

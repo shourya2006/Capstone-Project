@@ -8,9 +8,21 @@ hamburger.addEventListener("click", function () {
 
 const skip = document.querySelector(".skip");
 const getintouch = document.querySelector(".getintouch");
+const disable = document.querySelector(".disableget");
 
 skip.addEventListener("click", function () {
   getintouch.classList.toggle("disable");
+  disable.classList.add("getin");
+  disable.classList.remove("disableget");
+});
+
+const touch = document.getElementById("touch");
+
+touch.addEventListener("click", function () {
+  getintouch.classList.toggle("disable");
+
+  touch.classList.remove("getin");
+  touch.classList.add("disableget");
 });
 
 const navbar = document.querySelector("nav");
