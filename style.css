@@ -8,12 +8,25 @@
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
+}
+.scroll{
+  background-color: #000000;
+
+}
+.scroll img{
+  filter: invert(1);
+}
+.scroll .nav-links a{
+  color: white;
 }
 p {
   font-family: "Roboto Mono", monospace !important;
   font-weight: 300;
 }
 nav {
+  position: fixed;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -262,9 +275,12 @@ footer button:hover {
   }
 }
 
-/* @media (max-width: 440px) {
-    .frames img{
-        width: 100%;
-    }
+@media (max-width: 515px) {
+   .header h1{
+    font-size: 42px;
+   }
     
-} */
+   .about div h2{
+    font-size: 30px;
+   }
+}
