@@ -108,6 +108,7 @@ nav .nav-links a {
   display: flex;
   text-align: center;
   justify-content: center;
+  transition: all 1s;
 }
 .getintouch h3 {
   font-size: 28px;
@@ -135,7 +136,7 @@ nav .nav-links a {
   background-color: #333;
   color: white;
 }
-.getintouch button {
+.submit {
   width: 100%;
   padding: 8px;
   border: none;
@@ -158,11 +159,11 @@ nav .nav-links a {
   margin: 10px;
   text-decoration: none;
 }
-
 footer {
   display: flex;
   justify-content: space-between;
   margin: 20px;
+  margin-top: 10em;
   align-items: center;
 }
 
@@ -194,6 +195,11 @@ footer button:hover {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background-color: black;
+}
+
+
+.disable{
+  display: none;
 }
 /* Responsive */
 
