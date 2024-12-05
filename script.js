@@ -13,18 +13,31 @@ skip.addEventListener("click", function () {
   getintouch.classList.toggle("disable");
 });
 
-
-
 const navbar = document.querySelector("nav");
 
-
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
   let y = window.scrollY;
   if (y >= 40) {
-    navbar.classList.add("scroll")
-    navbar.classList.remove("nav")
+    navbar.classList.add("scroll");
+    navbar.classList.remove("nav");
   } else {
-    navbar.classList.add("nav")
-    navbar.classList.remove("scroll")
+    navbar.classList.add("nav");
+    navbar.classList.remove("scroll");
   }
-})
+});
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", function () {
+  sections.forEach((sec) => {
+    let y = window.scrollY;
+    let offset = window.offsetTop;
+    let height = window.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if (y >= offset && y < offset + height) {
+      document.querySelector("nav a [href* =" + id + "]");
+    }
+  });
+});
