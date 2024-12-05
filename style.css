@@ -10,15 +10,17 @@
   font-style: normal;
   scroll-behavior: smooth;
 }
-.scroll{
+.scroll {
   background-color: #000000;
-
 }
-.scroll img{
+.scroll img {
   filter: invert(1);
 }
-.scroll .nav-links a{
+.scroll .nav-links a {
   color: white;
+}
+.scroll .nav-links .hamburger .bars {
+  background-color: white !important;
 }
 p {
   font-family: "Roboto Mono", monospace !important;
@@ -210,8 +212,7 @@ footer button:hover {
   background-color: black;
 }
 
-
-.disable{
+.disable {
   display: none;
 }
 /* Responsive */
@@ -276,11 +277,11 @@ footer button:hover {
 }
 
 @media (max-width: 515px) {
-   .header h1{
+  .header h1 {
     font-size: 42px;
-   }
-    
-   .about div h2{
+  }
+
+  .about div h2 {
     font-size: 30px;
-   }
+  }
 }
