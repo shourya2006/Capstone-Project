@@ -89,6 +89,7 @@ nav .nav-links a {
 .frames p:nth-child(3) {
   padding-top: 0px;
   padding-bottom: 10px;
+  font-size: 15px;
 }
 .about {
   padding: 156px 10px;
