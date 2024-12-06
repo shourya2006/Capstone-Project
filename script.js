@@ -52,3 +52,11 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+const preloader = document.getElementById("loading");
+const container = document.getElementById("container");
+
+window.addEventListener("load", function () {
+  preloader.style.display = "none";
+  container.style.display = "block";
+});
