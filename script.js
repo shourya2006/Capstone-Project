@@ -43,8 +43,8 @@ const navLinks = document.querySelectorAll("nav a");
 window.addEventListener("scroll", function () {
   sections.forEach((sec) => {
     let y = window.scrollY;
-    let offset = window.offsetTop;
-    let height = window.offsetHeight;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
     if (y >= offset && y < offset + height) {
