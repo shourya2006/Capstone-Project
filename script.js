@@ -37,22 +37,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
-
-window.addEventListener("scroll", function () {
-  sections.forEach((sec) => {
-    let y = window.scrollY;
-    let offset = sec.offsetTop;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
-
-    if (y >= offset && y < offset + height) {
-      document.querySelector("nav a [href* =" + id + "]");
-    }
-  });
-});
-
 const preloader = document.getElementById("loading");
 const container = document.getElementById("container");
 
